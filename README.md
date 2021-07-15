@@ -77,7 +77,7 @@ The submit button is enabled only when the required fields are filled.
 
 <img src = "https://avatars2.githubusercontent.com/abhilashk23"  height="120" alt=""> <br>Abhilash Khuntia
 
-<a href ="https://www.instagram.com/vintageak47/"> 
+<a href ="https://github.com/abhilashk23"> 
   <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
 </a>
 
