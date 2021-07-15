@@ -26,6 +26,11 @@ and deleting the data with search functionality.
 
 ## Screenshots
 
+
+### Selecting one row
+
+<img src ="demo images/select_single_demo.PNG" />
+
 ### Adding data
 
 The submit button is enabled only when the required fields are filled.
@@ -39,4 +44,8 @@ The submit button is enabled only when the required fields are filled.
 ### Editing Data
 
 <img src = "demo images/edit_demo.PNG" />
+
+<br />
+
+### 
 
