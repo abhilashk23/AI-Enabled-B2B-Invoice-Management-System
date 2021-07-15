@@ -35,6 +35,10 @@ and deleting the data with search functionality.
 
 <img src ="demo images/select_multiple_demo.PNG" />
 
+### Selecting all the rows
+
+<img src ="demo images/select_all_demo.PNG" />
+
 
 <br />
 
