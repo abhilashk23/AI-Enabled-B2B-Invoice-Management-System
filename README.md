@@ -29,6 +29,9 @@ and deleting the data with search functionality.
 
 ### Selecting one row
 
+If one of the rows is selected or more than one rows are selected then, ADD button is disabled in both the cases.
+EDIT and DELETE button are enabled only when one row is selected. But if more than one rows are selected, only DELETE button is enabled.
+
 <img src ="demo images/select_single_demo.PNG" />
 <br />
 
