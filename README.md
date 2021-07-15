@@ -62,5 +62,7 @@ The submit button is enabled only when the required fields are filled.
 
 <br />
 
-### 
+### Deleting Multiple rows
+
+<img src= "demo images/delete_multiple_demo.PNG" />
 
