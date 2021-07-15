@@ -23,3 +23,9 @@ and deleting the data with search functionality.
 - Jypyter Notebook
 
 
+
+## Screenshots
+
+### UI when data loads from databse
+
+<img src = "demo images/add_demo1.png" /> 
