@@ -28,5 +28,7 @@ and deleting the data with search functionality.
 
 ### Adding data
 
+The submit button is enabled only when the required fields are filled.
+
 <img src = "demo images/add_demo1.PNG" /> 
-<img src = "demo images/add_demo1.PNG" /> 
+<img src = "demo images/ADD_DEMO2.PNG" /> 
