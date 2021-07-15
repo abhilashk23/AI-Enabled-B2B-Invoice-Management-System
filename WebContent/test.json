@@ -1,0 +1,47 @@
+[
+  {
+    "name_customer": "DOT foundation",
+    "cust_number": "200705742",
+    "invoice_no": "1930842704",
+    "total_open_amount": 20787.23,
+    "due_in_date": "2020-03-13",
+    "predicted_date": "2020-03-14",
+    "notes": ""
+  },
+  {
+    "name_customer": "KRAFT F",
+    "cust_number": "CCU013",
+    "invoice_no": "1930886268",
+    "total_open_amount": 19992.18,
+    "due_in_date": "2020-02-27",
+    "predicted_date": "2020-04-03",
+    "notes": ""
+  },
+  {
+    "name_customer": "MDV/",
+    "cust_number": "200792734",
+    "invoice_no": "1930780540",
+    "total_open_amount": 87769.4,
+    "due_in_date": "2020-03-13",
+    "predicted_date": "2020-03-14",
+    "notes": ""
+  },
+  {
+    "name_customer": "WAL-M trust",
+    "cust_number": "140106408",
+    "invoice_no": "1930795064",
+    "total_open_amount": 31833.76,
+    "due_in_date": "2020-03-09",
+    "predicted_date": "2020-03-17",
+    "notes": ""
+  },
+  {
+    "name_customer": "C\u0026S WH foundation",
+    "cust_number": "200762301",
+    "invoice_no": "1930680973",
+    "total_open_amount": 5069.9,
+    "due_in_date": "2020-03-13",
+    "predicted_date": "2020-03-14",
+    "notes": ""
+  }
+]

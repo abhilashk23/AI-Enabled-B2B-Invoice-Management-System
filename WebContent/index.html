@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">  -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header class="main_head">
+		<div class="prod_logo">
+			<img src="images/Group 20399.svg" alt="ABC PRODUCT LOGO">
+		</div>
+		<div class="hrc_logo">
+			<img src="images/logo.svg" alt="Highradius LOGO">
+		</div>
+	</header>
+
+	<main id="main" class="main">
+	<div class="grid_name">
+		<h2>Invoice List</h2>
+	</div>
+
+	<section class="table_section" id="table_section">
+		<div class="grid_head">
+			<div class="buttons">
+				<button type="button" class="btn add-btn btn-enabled" id="add">
+					<i class="fas fa-plus"></i> Add
+				</button>
+				<button type="button" class="btn edit-btn" id="edit" disabled>
+					<i class="fas fa-pen"></i> Edit
+				</button>
+				<button type="button" class=" btn del-btn" id="del" disabled>
+					<i class="fas fa-minus"></i> Delete
+				</button>
+				<div class="search_container">
+					<input type="text" id="search" onkeyup="myFunction()"
+						placeholder="Search by invoice number"> <i
+						class="fas fa-search"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="grid_body">
+			<div class="wrapper">
+				<table class="invoice_table" id="invoice_table">
+					<thead>
+						<tr class="table_head">
+							<th><input type="checkbox" name="chkbox"></th>
+							<th>Customer Name</th>
+							<th>Customer #</th>
+							<th>Invoice #</th>
+							<th>Invoice Amount</th>
+							<th>Due Date</th>
+							<th>Predicted Payment Date</th>
+							<th>Notes</th>
+						</tr>
+					</thead>
+					<tbody id="table_body">
+
+					</tbody>
+
+
+				</table>
+
+				<button type="button" class="btn prev-btn" id="prev">
+					<i class="fas fa-angle-left"></i>
+				</button>
+				<button type="button" class=" btn next-btn" id="next">
+					<i class="fas fa-angle-right"></i>
+				</button>
+			</div>
+		</div>
+
+	</section>
+
+
+	<div class="add_modal" id="add_modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<p>Add Invoice</p>
+			</div>
+			<div class="modal-body">
+				<form action="add" method="POST">
+					<div class="form-contain">
+						<div class="col col-left">
+							<div class="row">
+								<div class="col-25">
+									<label for="custname">Customer Name<span>*</span></label>
+								</div>
+								<div class="col-75">
+									<input type="text" id="cname" name="custname" placeholder=""
+										required>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-25">
+									<label for="custno">Customer No. <span>*</span></label>
+								</div>
+								<div class="col-75">
+									<input type="text" id="cno" name="custno" placeholder=""
+										required>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-25">
+									<label for="inno">Invoice No. <span>*</span></label>
+								</div>
+								<div class="col-75">
+									<input type="text" id="invoice_no" name="inno" placeholder=""
+										required>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-25">
+									<label for="inamt">Invoice Amount <span>*</span></label>
+								</div>
+								<div class="col-75">
+									<input type="text" id="invoice_amt" name="inamt" placeholder=""
+										required>
+								</div>
+							</div>
+						</div>
+						<div class="col col-right">
+							<div class="row">
+								<div class="col-25">
+									<label for="ddate">Due Date <span>*</span></label>
+								</div>
+								<div class="col-75">
+									<input type="date" id="due_date" name="ddate" placeholder=""
+										required>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-25">
+									<label for="subject">Notes</label>
+								</div>
+								<div class="col-75">
+									<textarea id="subject" name="subject" placeholder="" rows="7"></textarea>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sub_btn">
+						<div class="cancel_button">
+							<button type="button" class="btn cancel-btn cancel"
+								id="addcancel">Cancel</button>
+						</div>
+						<div class="other_buttons">
+							<button type="button" class="btn clear-btn" id="clear">Clear</button>
+							<input type="submit" class="btn btn-add" id="add_data" disabled>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<!-- <div class="modal-footer">
+                </div> -->
+		</div>
+	</div>
+
+
+	<div class="del_modal" id="del_modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<p>Delete record(s)?</p>
+			</div>
+			<div class="modal-body">
+				<p>You'll lose your record(s) after this action. We can't
+					recover them once you delete.</p>
+				<p>
+					Are you sure you want to <span
+						style="color: #FF5E5E; font-weight: 600;">permanently
+						delete</span> them?
+				</p>
+			</div>
+			<div class="modal-footer">
+				<div class="other_buttons">
+					<button type="button" class="btn cancel-btn" id="delcancel">Cancel</button>
+					<button type="button" class="btn del-btn" id="delete_data">Delete</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="edit_modal" id="edit_modal">
+		<div class="modal-content">
+			<div class="modal-header">
+				<span class="close">&times;</span>
+				<p>Edit Invoice</p>
+			</div>
+			<div class="modal-body">
+				<form action="edit" method="POST">
+					<div class="row">
+						<div class="col-25">
+							<label for="invamt">Invoice Amount</label>
+						</div>
+						<div class="col-75">
+							<input type="text" id="invoice__amt" name="invamt" placeholder="">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-25">
+							<label for="notes">Notes</label>
+						</div>
+						<div class="col-75">
+							<textarea id="notes" name="notes" placeholder="" rows="7"></textarea>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<div class="cancel_button">
+					<button type="button" class="btn cancel-btn cancel" id="editcancel">Cancel</button>
+				</div>
+				<div class="other_buttons">
+					<button type="button" class="btn reset-btn" id="reset">Reset</button>
+					<button type="button" class="btn save-btn" id="save_data">Save</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	</main>
+
+
+
+
+
+	<script src="https://kit.fontawesome.com/c252d9c8b4.js"
+		crossorigin="anonymous"></script>
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<!-- <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script> -->
+	<script type="text/javascript" src="test.json"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
