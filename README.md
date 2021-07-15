@@ -26,6 +26,7 @@ and deleting the data with search functionality.
 
 ## Screenshots
 
-### UI when data loads from databse
+### Adding data
 
-<img src = "demo images/add_demo1.png" /> 
+<img src = "demo images/add_demo1.PNG" /> 
+<img src = "demo images/add_demo1.PNG" /> 
