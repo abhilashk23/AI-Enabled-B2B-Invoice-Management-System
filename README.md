@@ -30,15 +30,16 @@ and deleting the data with search functionality.
 ### Selecting one row
 
 <img src ="demo images/select_single_demo.PNG" />
+<br />
 
 ### Selecting mutiple row
 
 <img src ="demo images/select_multiple_demo.PNG" />
+<br />
 
 ### Selecting all the rows
 
 <img src ="demo images/select_all_demo.PNG" />
-
 
 <br />
 
