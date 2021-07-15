@@ -38,3 +38,5 @@ The submit button is enabled only when the required fields are filled.
 
 ### Editing Data
 
+<img src = "demo images/edit_demo.PNG" />
+
