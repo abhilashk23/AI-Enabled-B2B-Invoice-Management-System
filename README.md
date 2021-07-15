@@ -31,6 +31,13 @@ and deleting the data with search functionality.
 
 <img src ="demo images/select_single_demo.PNG" />
 
+### Selecting mutiple row
+
+<img src ="demo images/select_multiple_demo.PNG" />
+
+
+<br />
+
 ### Adding data
 
 The submit button is enabled only when the required fields are filled.
